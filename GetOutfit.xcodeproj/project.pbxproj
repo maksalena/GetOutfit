@@ -17,6 +17,8 @@
 		CA6CAFFA27F82BF6005F1258 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA6CAFF927F82BF6005F1258 /* Assets.xcassets */; };
 		CA6CAFFD27F82BF6005F1258 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA6CAFFB27F82BF6005F1258 /* LaunchScreen.storyboard */; };
 		CA6CB00627F8358D005F1258 /* Noto_Sans in Resources */ = {isa = PBXBuildFile; fileRef = CA6CB00527F8358D005F1258 /* Noto_Sans */; };
+		CA7C8A0427FDCA3D0069DC2D /* NewOccasionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7C8A0327FDCA3D0069DC2D /* NewOccasionViewController.swift */; };
+		CA7C8A0627FDCA810069DC2D /* CreateOccasionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7C8A0527FDCA810069DC2D /* CreateOccasionViewController.swift */; };
 		CA897F4327F86D9700C308F5 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA897F4227F86D9700C308F5 /* LogInViewController.swift */; };
 		CA897F4527F86DB200C308F5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA897F4427F86DB200C308F5 /* SignUpViewController.swift */; };
 		CA897F6A27F88C4F00C308F5 /* PickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA897F6927F88C4F00C308F5 /* PickerManager.swift */; };
@@ -37,6 +39,8 @@
 		CA6CAFFC27F82BF6005F1258 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA6CAFFE27F82BF6005F1258 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA6CB00527F8358D005F1258 /* Noto_Sans */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Noto_Sans; sourceTree = "<group>"; };
+		CA7C8A0327FDCA3D0069DC2D /* NewOccasionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOccasionViewController.swift; sourceTree = "<group>"; };
+		CA7C8A0527FDCA810069DC2D /* CreateOccasionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOccasionViewController.swift; sourceTree = "<group>"; };
 		CA897F4227F86D9700C308F5 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		CA897F4427F86DB200C308F5 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		CA897F6927F88C4F00C308F5 /* PickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerManager.swift; sourceTree = "<group>"; };
@@ -89,6 +93,8 @@
 				CA897F4427F86DB200C308F5 /* SignUpViewController.swift */,
 				CA897F6B27F88E8C00C308F5 /* UserInfViewController.swift */,
 				CA60759927F8D2D800EBFA94 /* TutorialViewController.swift */,
+				CA7C8A0327FDCA3D0069DC2D /* NewOccasionViewController.swift */,
+				CA7C8A0527FDCA810069DC2D /* CreateOccasionViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -263,10 +269,12 @@
 			files = (
 				CA897F4327F86D9700C308F5 /* LogInViewController.swift in Sources */,
 				CA6CAFF527F82BF5005F1258 /* IntroViewController.swift in Sources */,
+				CA7C8A0427FDCA3D0069DC2D /* NewOccasionViewController.swift in Sources */,
 				CA60759A27F8D2D800EBFA94 /* TutorialViewController.swift in Sources */,
 				CA6CAFF127F82BF5005F1258 /* AppDelegate.swift in Sources */,
 				CA6CAFF327F82BF5005F1258 /* SceneDelegate.swift in Sources */,
 				CA897F4527F86DB200C308F5 /* SignUpViewController.swift in Sources */,
+				CA7C8A0627FDCA810069DC2D /* CreateOccasionViewController.swift in Sources */,
 				CA897F6A27F88C4F00C308F5 /* PickerManager.swift in Sources */,
 				CA897F6C27F88E8C00C308F5 /* UserInfViewController.swift in Sources */,
 			);

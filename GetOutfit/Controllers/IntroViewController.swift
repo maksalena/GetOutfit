@@ -27,11 +27,11 @@ class IntroViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     
     @IBAction func logInButtonPressed(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "goToEnter", sender: self)
+        performSegue(withIdentifier: "goToEnter", sender: self)
     }
     
     @IBAction func signUpButtonPressed(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "goToRegistration", sender: self)
+        performSegue(withIdentifier: "goToRegistration", sender: self)
     }
     
     

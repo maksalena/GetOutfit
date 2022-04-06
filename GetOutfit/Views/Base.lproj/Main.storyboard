@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iec-hr-Xg3">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -137,28 +137,28 @@
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sPa-H0-iy4">
-                                <rect key="frame" x="63" y="469" width="327" height="50"/>
+                                <rect key="frame" x="63" y="469" width="288" height="50"/>
                                 <color key="backgroundColor" name="bgColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="HCl-Ai-NHW"/>
                                 </constraints>
                             </pickerView>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7qP-bv-asJ">
-                                <rect key="frame" x="63" y="615" width="327" height="50"/>
+                                <rect key="frame" x="63" y="615" width="288" height="50"/>
                                 <color key="backgroundColor" name="bgColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="QzC-dH-Enj"/>
                                 </constraints>
                             </pickerView>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1G5-AG-h2H">
-                                <rect key="frame" x="63" y="394" width="327" height="50"/>
+                                <rect key="frame" x="63" y="394" width="288" height="50"/>
                                 <color key="backgroundColor" name="bgColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="FKy-oF-hm2"/>
                                 </constraints>
                             </pickerView>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l3U-Bd-zsB">
-                                <rect key="frame" x="63" y="542" width="327" height="50"/>
+                                <rect key="frame" x="63" y="542" width="288" height="50"/>
                                 <color key="backgroundColor" name="bgColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Og0-ft-Dw2"/>
@@ -567,7 +567,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="o9q-sE-zap"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="bgColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="TRc-lC-04D"/>
                 </viewController>
@@ -575,10 +575,38 @@
             </objects>
             <point key="canvasLocation" x="2703" y="-346"/>
         </scene>
+        <!--New Occasion-->
+        <scene sceneID="5G1-dE-Ma9">
+            <objects>
+                <viewController title="New Occasion" id="i8o-jp-EcA" customClass="NewOccasionViewController" customModule="GetOutfit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fAf-SF-N1J">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pts-74-7OA">
+                                <rect key="frame" x="328" y="70" width="45" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="like" imageContentMode="scaleAspectFit"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="goToFavoritePressed:" destination="iec-hr-Xg3" eventType="touchUpInside" id="Jch-9V-RmK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1KO-T0-LzE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ucV-C3-XD2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3651" y="-1065"/>
+        </scene>
         <!--Occasions-->
         <scene sceneID="9sz-Md-7a1">
             <objects>
-                <viewController title="Occasions" id="iec-hr-Xg3" sceneMemberID="viewController">
+                <viewController title="Occasions" id="iec-hr-Xg3" customClass="CreateOccasionViewController" customModule="GetOutfit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9X8-KX-o3h">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -616,22 +644,75 @@
                                     <segue destination="RAL-ed-Ckw" kind="presentation" modalPresentationStyle="fullScreen" id="y2H-HJ-H7o"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Образ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qAv-bc-HXd">
-                                <rect key="frame" x="171" y="438" width="51" height="21"/>
+                            <pickerView alpha="0.34999999999999998" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rqo-qH-vJg">
+                                <rect key="frame" x="63" y="333" width="288" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="backgroundColor" name="lightGreen"/>
+                            </pickerView>
+                            <pickerView alpha="0.75" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bmd-rC-OQm">
+                                <rect key="frame" x="63" y="479" width="288" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="blurColor"/>
+                            </pickerView>
+                            <pickerView alpha="0.59999999999999998" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oBE-6O-CpN">
+                                <rect key="frame" x="63" y="258" width="288" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="blurColor"/>
+                            </pickerView>
+                            <pickerView alpha="0.55000000000000004" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B94-Sc-1qS">
+                                <rect key="frame" x="63" y="190" width="288" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="blurColor"/>
+                            </pickerView>
+                            <pickerView alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rUc-0u-7tf">
+                                <rect key="frame" x="63" y="406" width="288" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="blurColor"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUd-R1-v9w">
+                                <rect key="frame" x="59" y="665" width="297" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Собрать образ" titleAlignment="center">
+                                    <backgroundConfiguration key="background" cornerRadius="8">
+                                        <color key="backgroundColor" name="lightGreen"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="19"/>
+                                    <color key="baseForegroundColor" name="bgColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="createNewOccasionPressed:" destination="iec-hr-Xg3" eventType="touchUpInside" id="wi5-aU-GBk"/>
+                                    <action selector="nextButtonPressed:" destination="3gQ-Md-L05" eventType="touchUpInside" id="nVb-JN-Dhd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3YM-uz-nRN">
+                                <rect key="frame" x="328" y="70" width="45" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="like" imageContentMode="scaleAspectFit"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="goToFavoritePressed:" destination="iec-hr-Xg3" eventType="touchUpInside" id="hrR-F7-8dk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kEY-9Y-15F"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="bgColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="0G4-SO-4kq"/>
+                    <connections>
+                        <outlet property="brendPicker" destination="rqo-qH-vJg" id="xiC-a6-yvm"/>
+                        <outlet property="budgetPicker" destination="rUc-0u-7tf" id="LZ9-kl-jXl"/>
+                        <outlet property="colorPicker" destination="oBE-6O-CpN" id="gtW-m4-Ac2"/>
+                        <outlet property="genderPicker" destination="bmd-rC-OQm" id="DuQ-lC-I7D"/>
+                        <outlet property="stylePicker" destination="B94-Sc-1qS" id="cwi-bh-upx"/>
+                        <segue destination="i8o-jp-EcA" kind="presentation" identifier="createNewOccasion" modalPresentationStyle="fullScreen" id="aGz-Dw-Hyi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H1n-GG-Ucf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3651" y="-346"/>
+            <point key="canvasLocation" x="3650.7246376811595" y="-346.20535714285711"/>
         </scene>
         <!--Profile-->
         <scene sceneID="o8h-Sq-QcX">
@@ -683,7 +764,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="a9h-cg-cCI"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="bgColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="ACz-qo-DkK"/>
                 </viewController>
@@ -694,16 +775,20 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Dr3-Y9-RnO"/>
-        <segue reference="6hx-ye-k0a"/>
+        <segue reference="KzZ-M7-uXA"/>
         <segue reference="y2H-HJ-H7o"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.down" catalog="system" width="120" height="128"/>
         <image name="clothes-hanger" width="170.5" height="170.5"/>
         <image name="home" width="170.5" height="170.5"/>
+        <image name="like" width="170.5" height="170.5"/>
         <image name="profile" width="170.5" height="170.5"/>
         <namedColor name="bgColor">
             <color red="0.98799997568130493" green="0.98799997568130493" blue="0.98799997568130493" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="blurColor">
+            <color red="0.78799998760223389" green="0.81599998474121094" blue="0.80800002813339233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="darkGreen">
             <color red="0.31799998879432678" green="0.37999999523162842" blue="0.37299999594688416" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
