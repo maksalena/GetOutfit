@@ -14,46 +14,45 @@ class CreateOccasionViewController: UIViewController {
         
         stylePicker.delegate = self
         colorPicker.delegate = self
-        brendPicker.delegate = self
         budgetPicker.delegate = self
         genderPicker.delegate = self
         
         stylePicker.dataSource = self
         colorPicker.dataSource = self
-        brendPicker.dataSource = self
         budgetPicker.dataSource = self
         genderPicker.dataSource = self
 
         stylePicker.layer.cornerRadius = 8
         colorPicker.layer.cornerRadius = 8
-        brendPicker.layer.cornerRadius = 8
         budgetPicker.layer.cornerRadius = 8
         genderPicker.layer.cornerRadius = 8
         
         stylePicker.alpha = 0.55
         colorPicker.alpha = 0.55
-        brendPicker.alpha = 0.55
         budgetPicker.alpha = 0.55
         genderPicker.alpha = 0.55
     }
     
     @IBOutlet weak var stylePicker: UIPickerView!
     @IBOutlet weak var colorPicker: UIPickerView!
-    @IBOutlet weak var brendPicker: UIPickerView!
     @IBOutlet weak var budgetPicker: UIPickerView!
     @IBOutlet weak var genderPicker: UIPickerView!
     
     var pickerManager = PickerManager()
-    var styleSelected = ""
-    var colorSelected = ""
-    var budgetSelected = ""
-    var genderSelected = ""
+    var occasionManager = OccasionManager()
+    var styleSelected: [Int] = []
+    var colorSelected = [""]
+    var budgetSelected: Int = 0
+    var genderSelected = "female"
     
     @IBAction func goToFavoritePressed(_ sender: UIButton) {
         performSegue(withIdentifier: "goToFavorite", sender: self)
     }
     @IBAction func createNewOccasionPressed(_ sender: UIButton) {
+        occasionManager.fetchParametrs(style: styleSelected, colorTheme: colorSelected, budget: budgetSelected, gender: genderSelected)
         performSegue(withIdentifier: "createNewOccasion", sender: self)
+
+        
     }
     
 }
@@ -93,16 +92,18 @@ extension CreateOccasionViewController: UIPickerViewDelegate, UIPickerViewDataSo
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if pickerView == stylePicker {
-             styleSelected = pickerManager.style[row]
+            styleSelected = pickerManager.styleEng[row]
+            // print(pickerManager.styleEng[row].randomElement()!)
         }
         if pickerView == colorPicker {
-            colorSelected = pickerManager.color[row]
+            colorSelected = pickerManager.colorEng[row]
+            // print(pickerManager.colorEng[row].randomElement()!)
         }
         if pickerView == budgetPicker {
-            budgetSelected = pickerManager.budget[row]
+            budgetSelected = pickerManager.budgetEng[row]
         }
         if pickerView == genderPicker {
-            genderSelected = pickerManager.clothesGender[row]
+            genderSelected = pickerManager.clothesGenderEng[row]
         }
     }
     

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4EC8AE7DF3A669DF2FC2F9EB /* Pods_GetOutfit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4AF9C77739F90493316C47 /* Pods_GetOutfit.framework */; };
 		CA0A2BE327F89B35001D94BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CA0A2BE227F89B35001D94BD /* GoogleService-Info.plist */; };
+		CA3B7C6D280321330023850B /* OccasionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3B7C6C280321330023850B /* OccasionModel.swift */; };
+		CA3B7C6F280324770023850B /* OccasionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3B7C6E280324770023850B /* OccasionData.swift */; };
 		CA60759A27F8D2D800EBFA94 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA60759927F8D2D800EBFA94 /* TutorialViewController.swift */; };
 		CA6CAFF127F82BF5005F1258 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6CAFF027F82BF5005F1258 /* AppDelegate.swift */; };
 		CA6CAFF327F82BF5005F1258 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6CAFF227F82BF5005F1258 /* SceneDelegate.swift */; };
@@ -23,11 +25,14 @@
 		CA897F4527F86DB200C308F5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA897F4427F86DB200C308F5 /* SignUpViewController.swift */; };
 		CA897F6A27F88C4F00C308F5 /* PickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA897F6927F88C4F00C308F5 /* PickerManager.swift */; };
 		CA897F6C27F88E8C00C308F5 /* UserInfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA897F6B27F88E8C00C308F5 /* UserInfViewController.swift */; };
+		CABC11AC27FF69CA00B89CC0 /* OccasionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABC11AB27FF69CA00B89CC0 /* OccasionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A4D4F43627E50B51DEB8015C /* Pods-GetOutfit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetOutfit.release.xcconfig"; path = "Target Support Files/Pods-GetOutfit/Pods-GetOutfit.release.xcconfig"; sourceTree = "<group>"; };
 		CA0A2BE227F89B35001D94BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CA3B7C6C280321330023850B /* OccasionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OccasionModel.swift; sourceTree = "<group>"; };
+		CA3B7C6E280324770023850B /* OccasionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OccasionData.swift; sourceTree = "<group>"; };
 		CA4AF9C77739F90493316C47 /* Pods_GetOutfit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GetOutfit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA60759927F8D2D800EBFA94 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		CA6CAFED27F82BF5005F1258 /* GetOutfit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetOutfit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +50,7 @@
 		CA897F4427F86DB200C308F5 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		CA897F6927F88C4F00C308F5 /* PickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerManager.swift; sourceTree = "<group>"; };
 		CA897F6B27F88E8C00C308F5 /* UserInfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfViewController.swift; sourceTree = "<group>"; };
+		CABC11AB27FF69CA00B89CC0 /* OccasionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OccasionManager.swift; sourceTree = "<group>"; };
 		DCA942832AC69BB3F822A0F7 /* Pods-GetOutfit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetOutfit.debug.xcconfig"; path = "Target Support Files/Pods-GetOutfit/Pods-GetOutfit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,6 +152,9 @@
 			isa = PBXGroup;
 			children = (
 				CA897F6927F88C4F00C308F5 /* PickerManager.swift */,
+				CABC11AB27FF69CA00B89CC0 /* OccasionManager.swift */,
+				CA3B7C6C280321330023850B /* OccasionModel.swift */,
+				CA3B7C6E280324770023850B /* OccasionData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -267,11 +276,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA3B7C6F280324770023850B /* OccasionData.swift in Sources */,
 				CA897F4327F86D9700C308F5 /* LogInViewController.swift in Sources */,
 				CA6CAFF527F82BF5005F1258 /* IntroViewController.swift in Sources */,
 				CA7C8A0427FDCA3D0069DC2D /* NewOccasionViewController.swift in Sources */,
 				CA60759A27F8D2D800EBFA94 /* TutorialViewController.swift in Sources */,
+				CABC11AC27FF69CA00B89CC0 /* OccasionManager.swift in Sources */,
 				CA6CAFF127F82BF5005F1258 /* AppDelegate.swift in Sources */,
+				CA3B7C6D280321330023850B /* OccasionModel.swift in Sources */,
 				CA6CAFF327F82BF5005F1258 /* SceneDelegate.swift in Sources */,
 				CA897F4527F86DB200C308F5 /* SignUpViewController.swift in Sources */,
 				CA7C8A0627FDCA810069DC2D /* CreateOccasionViewController.swift in Sources */,
