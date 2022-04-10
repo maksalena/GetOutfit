@@ -33,8 +33,5 @@ class IntroViewController: UIViewController {
     @IBAction func signUpButtonPressed(_ sender: UIButton) {
         performSegue(withIdentifier: "goToRegistration", sender: self)
     }
-    
-    
-    
 }
 

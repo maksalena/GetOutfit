@@ -40,7 +40,8 @@ class CreateOccasionViewController: UIViewController {
     
     var pickerManager = PickerManager()
     var occasionManager = OccasionManager()
-    var styleSelected: [Int] = []
+
+    var styleSelected = ""
     var colorSelected = [""]
     var budgetSelected: Int = 0
     var genderSelected = "female"
@@ -55,8 +56,12 @@ class CreateOccasionViewController: UIViewController {
         
     }
     
+    func didFailWithError(error: Error) {
+        print(error)
+    }
 }
 
+//MARK: - UIPickerViewDelegate, UIPickerViewDataSource
 extension CreateOccasionViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -93,11 +98,9 @@ extension CreateOccasionViewController: UIPickerViewDelegate, UIPickerViewDataSo
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if pickerView == stylePicker {
             styleSelected = pickerManager.styleEng[row]
-            // print(pickerManager.styleEng[row].randomElement()!)
         }
         if pickerView == colorPicker {
             colorSelected = pickerManager.colorEng[row]
-            // print(pickerManager.colorEng[row].randomElement()!)
         }
         if pickerView == budgetPicker {
             budgetSelected = pickerManager.budgetEng[row]
@@ -106,6 +109,6 @@ extension CreateOccasionViewController: UIPickerViewDelegate, UIPickerViewDataSo
             genderSelected = pickerManager.clothesGenderEng[row]
         }
     }
-    
-    
 }
+
+

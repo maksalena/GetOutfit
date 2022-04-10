@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct OccasionModel {
+    let name: String
+    let price: Int
+    let picture: String
+}

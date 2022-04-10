@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iec-hr-Xg3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -611,6 +611,9 @@
                                 <buttonConfiguration key="configuration" style="plain">
                                     <backgroundConfiguration key="background" image="profile"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="iNK-AZ-wi1" kind="presentation" modalPresentationStyle="fullScreen" id="ved-ap-WIu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PcR-KB-iyE">
                                 <rect key="frame" x="55" y="790" width="46" height="43"/>
@@ -620,6 +623,9 @@
                                 <buttonConfiguration key="configuration" style="plain">
                                     <backgroundConfiguration key="background" image="home"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="RAL-ed-Ckw" kind="presentation" modalPresentationStyle="fullScreen" id="1Q9-Gz-kFr"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mle-Fd-zCe">
                                 <rect key="frame" x="20" y="120" width="173" height="218"/>
@@ -846,9 +852,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Dr3-Y9-RnO"/>
+        <segue reference="ved-ap-WIu"/>
         <segue reference="3nG-Ja-urM"/>
-        <segue reference="y2H-HJ-H7o"/>
+        <segue reference="1Q9-Gz-kFr"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.down" catalog="system" width="120" height="128"/>

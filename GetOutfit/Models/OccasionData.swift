@@ -9,4 +9,6 @@ import Foundation
 
 struct OccasionData: Decodable {
     let name: String
+    let price: Int
+    let picture: String
 }
