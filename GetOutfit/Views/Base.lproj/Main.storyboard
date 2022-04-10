@@ -526,7 +526,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qT6-Fr-1iW">
-                                <rect key="frame" x="181" y="789" width="53" height="50"/>
+                                <rect key="frame" x="181" y="786" width="53" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" name="darkGreen"/>
                                 <state key="normal" title="Button"/>
@@ -538,7 +538,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pc-MQ-jti">
-                                <rect key="frame" x="315" y="792" width="44" height="44"/>
+                                <rect key="frame" x="315" y="789" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" name="darkGreen"/>
                                 <state key="normal" title="Button"/>
@@ -550,7 +550,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4R0-a7-eAq">
-                                <rect key="frame" x="55" y="793" width="46" height="43"/>
+                                <rect key="frame" x="55" y="790" width="46" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" name="darkGreen"/>
                                 <state key="normal" title="Button"/>
@@ -574,6 +574,66 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fXm-Oa-BQc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2703" y="-346"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wFL-LG-5n1">
+            <objects>
+                <viewController id="JPa-Xv-Wc1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X6U-wU-Dvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Избранное" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEG-dY-qbg">
+                                <rect key="frame" x="160" y="440" width="95" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFk-6F-E8E">
+                                <rect key="frame" x="181" y="786" width="53" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="darkGreen"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="clothes-hanger"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="iec-hr-Xg3" kind="presentation" modalPresentationStyle="fullScreen" id="xHr-Iz-C8Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Zt-Cr-3OI">
+                                <rect key="frame" x="315" y="789" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="darkGreen"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="profile"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="iNK-AZ-wi1" kind="presentation" modalPresentationStyle="fullScreen" id="Uub-c8-WMY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ae-AH-euH">
+                                <rect key="frame" x="55" y="790" width="46" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="darkGreen"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="home"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="RAL-ed-Ckw" kind="presentation" modalPresentationStyle="fullScreen" id="YaH-8J-rAN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GU2-6h-3Qq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ge6-Bz-i0m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2702.898550724638" y="-1065.4017857142858"/>
         </scene>
         <!--New Occasion-->
         <scene sceneID="5G1-dE-Ma9">
@@ -773,6 +833,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="goToFavoritePressed:" destination="iec-hr-Xg3" eventType="touchUpInside" id="hrR-F7-8dk"/>
+                                    <segue destination="JPa-Xv-Wc1" kind="presentation" identifier="goToFavorite" modalPresentationStyle="fullScreen" id="qst-RQ-ZQk"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -852,9 +913,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ved-ap-WIu"/>
-        <segue reference="3nG-Ja-urM"/>
-        <segue reference="1Q9-Gz-kFr"/>
+        <segue reference="Uub-c8-WMY"/>
+        <segue reference="xHr-Iz-C8Y"/>
+        <segue reference="YaH-8J-rAN"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.down" catalog="system" width="120" height="128"/>
